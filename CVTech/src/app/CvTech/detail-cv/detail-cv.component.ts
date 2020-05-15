@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Personne } from '../../Model/Personne';
 
 @Component({
   selector: 'app-detail-cv',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detail-cv.component.css']
 })
 export class DetailCvComponent implements OnInit {
-
+  @Input() personne: Personne;
   constructor() { }
 
   ngOnInit(): void {
